@@ -1,0 +1,22 @@
+[package]
+name = "zed-websocket"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+derives = { path = "./derives" }
+
+actix = "0.13.1"
+actix-ws = "0.2.5"
+actix-http = { version = "3.5.1", default-features = false }
+anyhow = "1.0.77"
+actix-web = { version = "4.4.1", default-features = false }
+futures = "0.3.30"
+regex = "1.10.2"
+serde = { version = "1.0.193", features = ["derive"] }
+serde_json = "1.0.108"
+uuid = { version = "1.6.1", features = ["v4"] }
+tokio = { version = "1.35.1", features = ["sync"] }
